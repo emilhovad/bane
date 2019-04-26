@@ -1,6 +1,8 @@
 # bane
 Analysis of rail images and track recording car.
 
+#######
+# Tensorflow_yolov3 (folder name)
 First the original repo is from https://github.com/YunYang1994/tensorflow-yolov3
 
 NOTE, we choosed the folder name /tensorflow_yolov3 instead of /tensorflow-yolov3 (might be problematic)
@@ -9,7 +11,7 @@ If you want to train an example of a simple 1-class data set, a raccoon data set
 
 
 #######
-# Here it is for training the banedk images, 
+# a) Here it is for training the banedk images, 
 
 Train "train image" dataset
 
@@ -71,7 +73,7 @@ $ python evaluate_bane.py
 
 
 #######
-# Convert weight trained in the pjreddie framework to the tensorflow-yolov3 framework, 
+# b) Convert weight trained in the pjreddie framework to the tensorflow-yolov3 framework, 
 
 1) use the code to convert the pjreddie trained network (darknet) to the this framework, this code convert the network with only 1 colour channel
 
@@ -90,3 +92,8 @@ when testing remember this network is 608X608X1 (1 color channel!)
 3) Test the pb files (cpu and/or gpu), in this case it is 608X608X1 (1 color channels!)
 
 #quick_test_bane.py (get a picture with a prediction)
+
+#######
+# Auto_detection_rail_failures_images (folder name)
+
+This is based on Helena's bsc project, here straight rails are investigated 
