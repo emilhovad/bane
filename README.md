@@ -1,5 +1,6 @@
 # bane
-Analysis of rail images and track recording car
+Analysis of rail images and track recording car.
+
 First the original repo is from https://github.com/YunYang1994/tensorflow-yolov3
 
 NOTE, we choosed the folder name /tensorflow_yolov3 instead of /tensorflow-yolov3 (might be problematic)
