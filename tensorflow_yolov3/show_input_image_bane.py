@@ -23,7 +23,7 @@ IMAGE_H, IMAGE_W = 608, 608
 BATCH_SIZE = 1
 SHUFFLE_SIZE = 1
 
-train_tfrecord = "./tf_yolo_label/raccoon_*.tfrecords"
+train_tfrecord = "./tf_yolo_label/bane_*.tfrecords"
 anchors        = utils.get_anchors('./data/raccoon_anchors.txt', IMAGE_H, IMAGE_W)
 classes = utils.read_coco_names('./data/bane.names')
 num_classes = len(classes)

@@ -26,7 +26,7 @@ class parser(argparse.ArgumentParser):
         super(parser, self).__init__(description)
 
         self.add_argument(
-            "--ckpt_file", "-cf", default='./checkpoint/yolov3.ckpt', type=str,
+            "--ckpt_file", "-cf", default='./checkpoint/yolov3darknet.ckpt', type=str,
             help="[default: %(default)s] The checkpoint file ...",
             metavar="<CF>",
         )
@@ -93,7 +93,7 @@ def main(argv):
 
     with tf.Graph().as_default() as graph:
         sess = tf.Session(graph=graph)
-        inputs = tf.placeholder(tf.float32, [1, flags.image_h, flags.image_w, 3]) # placeholder for detector inputs
+        inputs = tf.placeholder(tf.float32, [1, flags.image_h, flags.image_w, 1]) # placeholder for detector inputs
         print("=>", inputs)
 
         with tf.variable_scope('yolov3'):

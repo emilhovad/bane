@@ -14,8 +14,11 @@ from PIL import Image, ImageStat
 
 #a)
 #make individual files with the corresponding image file name
-current_path ='/home/emil/tensorflow-yolov3-bane/'
-pathlabel='/home/emil/tensorflow-yolov3-bane/tf_yolo_label/'
+current_path ='/home/emil/bane/tensorflow_yolov3/'
+#new labelling for this frame work
+pathlabel='/home/emil/bane/tensorflow_yolov3/tf_yolo_label/'
+
+os.chdir(current_path)
 path = '/straittrainingset/'
 
 #create file
@@ -34,7 +37,7 @@ for filename in glob.glob("*.txt"):#os.listdir(current_path+path):
     im= Image.open(img_path)
     rgbim  =  Image.new("RGB", im.size)    
     rgbim.paste(im)
-    rgbim.save('/home/emil/tensorflow-yolov3-bane/straittrainingset/'+filename.rstrip("txt")+"jpg")
+    rgbim.save(current_path+'straittrainingset/'+filename.rstrip("txt")+"jpg")
     #stat=ImageStat.Stat(im)
     #stat.sum
     #    factor = 0.4

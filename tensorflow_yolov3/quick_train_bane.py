@@ -24,12 +24,12 @@ DECAY_STEPS      = 100
 DECAY_RATE       = 0.9
 SHUFFLE_SIZE     = 200
 CLASSES          = utils.read_coco_names('./data/bane.names')
-ANCHORS          = utils.get_anchors('./data/raccoon_anchors.txt', IMAGE_H, IMAGE_W)
+ANCHORS          = utils.get_anchors('./data/anchors.txt', IMAGE_H, IMAGE_W)
 NUM_CLASSES      = len(CLASSES)
-EVAL_INTERNAL    = 100
+EVAL_INTERNAL    = 200
 
-train_tfrecord   = "./tf_yolo_label/raccoon_train.tfrecords"
-test_tfrecord    = "./tf_yolo_label/raccoon_test.tfrecords"
+train_tfrecord   = "./tf_yolo_label/bane_train.tfrecords"
+test_tfrecord    = "./tf_yolo_label/bane_test.tfrecords"
 
 parser   = Parser(IMAGE_H, IMAGE_W, ANCHORS, NUM_CLASSES)
 trainset = dataset(parser, train_tfrecord, BATCH_SIZE, shuffle=SHUFFLE_SIZE)

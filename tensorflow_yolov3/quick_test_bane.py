@@ -54,35 +54,54 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 from core import utils
+import cv2 as cv
+import cv2
+#import cv
 
 
-IMAGE_H, IMAGE_W = 608, 608
+IMAGE_H, IMAGE_W = 608, 608#416, 416
 classes = utils.read_coco_names('./data/bane.names')
 num_classes = len(classes)
-image_path = "./bane_dataset/images/test.jpg"  # 181,
+image_path = "./straittrainingset/BTR_014034-H_km_36053_skinne-V_UIC211_FG2.jpg"  # 181,#BTR_012007-2_km_7451_skinne-V_UIC421_FG2.jpg
 img = Image.open(image_path)
+#show in normal format
+factor = np.array(img).shape[0]/np.array(img).shape[1]
+#img = Image.new("RGB", img.size) 
 #make it balck and white
 img=img.convert('L') 
 img_resized = np.array(img.resize(size=(IMAGE_H, IMAGE_W)), dtype=np.float32)
 img_resized = img_resized / 255.
 cpu_nms_graph = tf.Graph()
 
+#608
 input_tensor, output_tensors = utils.read_pb_return_tensors(cpu_nms_graph, "./checkpoint/yolov3bane_cpu_nms.pb",
                                            ["Placeholder:0", "concat_9:0", "mul_6:0"])
+
+#416
+#input_tensor, output_tensors = utils.read_pb_return_tensors(cpu_nms_graph, "./checkpoint/yolov3_tf_416_bane_cpu_nms.pb",
+#                                           ["Placeholder:0", "concat_9:0", "mul_6:0"])
 
 import cv2
 import numpy as np
 
 with tf.Session(graph=cpu_nms_graph) as sess:
+    #the numpy expand is used to input the correct dimesnions into the session running.
     boxes, scores = sess.run(output_tensors, feed_dict={input_tensor: np.expand_dims(np.expand_dims(img_resized, axis=0),axis=3)})
     print('boxes')
     print(boxes)
     #boxes, scores, labels = utils.cpu_nms(boxes, scores, num_classes, score_thresh=0.05, iou_thresh=0.5)
     #boxes, scores = sess.run(output_tensors, feed_dict={input_tensor: np.expand_dims(img_resized, axis=0)})
     #np.expand_dims(np.expand_dims(img_resized, axis=0),axis=3)
-    boxes, scores, labels = utils.cpu_nms(boxes, scores, num_classes, score_thresh=0.4, iou_thresh=0.5)
+    boxes, scores, labels = utils.cpu_nms(boxes, scores, num_classes, score_thresh=0.6, iou_thresh=0.4)
     print('boxes')
     print(boxes)
+    
+    print('labels')
+    print(labels)
+    
+    print('scores')
+    print(scores)
+    
     img = np.array(img_resized) 
 # Convert RGB to BGR 
     #open_cv_image = open_cv_image[:, :, ::-1].copy()
@@ -90,13 +109,20 @@ with tf.Session(graph=cpu_nms_graph) as sess:
     #print('boxes')
     #print(boxes)
     #ret box
-    cv2.rectangle(img,( int(boxes[0][0]),int(boxes[0][1])),( int(boxes[0][2]), int(boxes[0][3]) ),(0,255,0),3)
-    
-    cv2.rectangle(img,( int(boxes[1][0]),int(boxes[1][1])),( int(boxes[1][2]), int(boxes[1][3]) ),(0,255,0),3)
-    
-    factor = 1.8
+    if labels is not None:
+        for i in range(len(labels)):
+            if labels[i]==0:
+                cv2.rectangle(img,( int(boxes[i][0]),int(boxes[i][1])),( int(boxes[i][2]), int(boxes[i][3]) ),(255,0,0),1)
+            if labels[i]==1:
+                cv2.rectangle(img,( int(boxes[i][0]),int(boxes[i][1])),( int(boxes[i][2]), int(boxes[i][3]) ),(0,255,0),1)
+            if labels[i]==2:
+                cv2.rectangle(img,( int(boxes[i][0]),int(boxes[i][1])),( int(boxes[i][2]), int(boxes[i][3]) ),(0,0,255),1)
         
-    img = cv2.resize(img, (0,0), fx=factor, fy=factor, interpolation=cv2.INTER_NEAREST) 
+    #cv2.rectangle(img,( int(boxes[1][0]),int(boxes[1][1])),( int(boxes[1][2]), int(boxes[1][3]) ),(0,255,0),1)
+    
+    #factor = 1.8
+        
+    img = cv2.resize(img, (0,0), fx=1, fy=factor, interpolation=cv2.INTER_NEAREST) 
     
     cv2.imshow('img',img)
     cv2.waitKey(0)

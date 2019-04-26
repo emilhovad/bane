@@ -62,7 +62,7 @@ import cv2
 IMAGE_H, IMAGE_W = 608, 608#416, 416
 classes = utils.read_coco_names('./data/bane.names')
 num_classes = len(classes)
-image_path = "/home/emil/tensorflow-yolov3-bane/tf_yolo_label/straittrainingset/BTR_012007-2_km_7451_skinne-V_UIC421_FG2.jpg"  # 181,#BTR_012007-2_km_7451_skinne-V_UIC421_FG2.jpg
+image_path = "./straittrainingset/BTR_014034-H_km_36053_skinne-V_UIC211_FG2.jpg"  # 181,#BTR_012007-2_km_7451_skinne-V_UIC421_FG2.jpg
 img = Image.open(image_path)
 #show in normal format
 factor = np.array(img).shape[0]/np.array(img).shape[1]
@@ -74,7 +74,7 @@ img_resized = img_resized / 255.
 cpu_nms_graph = tf.Graph()
 
 #608
-input_tensor, output_tensors = utils.read_pb_return_tensors(cpu_nms_graph, "./checkpoint/yolov3_tf_608_bane_cpu_nms.pb",
+input_tensor, output_tensors = utils.read_pb_return_tensors(cpu_nms_graph, "./checkpoint/yolov3_cpu_nms.pb",
                                            ["Placeholder:0", "concat_9:0", "mul_6:0"])
 
 #416
