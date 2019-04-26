@@ -9,7 +9,7 @@ If you want to train an example of a simple 1-class data set, a raccoon data set
 
 
 ##############################################
-Here it is for the train images 
+Here it is for training the banedk images 
 
 Train "train image" dataset
 
