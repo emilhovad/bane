@@ -9,6 +9,8 @@ tensorflow_yolov3/bin-release/
 tensorflow_yolov3/bane_dataset/
 tensorflow_yolov3/checkpoint/
 tensorflow_yolov3/data/
+!tensorflow_yolov3/data/anchors.txt
+
 tensorflow_yolov3/OpenLabeling/main/input/
 tensorflow_yolov3/OpenLabeling/main/output/
 tensorflow_yolov3/raccoon_dataset/images/
