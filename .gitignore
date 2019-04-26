@@ -1,17 +1,28 @@
 # Build and Release Folders
-bin-debug/
-bin-release/
+tensorflow_yolov3/bin-debug/
+tensorflow_yolov3/bin-release/
 [Oo]bj/
 [Bb]in/
 
 # Other files and folders
 .settings/
+tensorflow_yolov3/bane_dataset/
+tensorflow_yolov3/checkpoint/
+tensorflow_yolov3/data/
+tensorflow_yolov3/OpenLabeling/main/input/
+tensorflow_yolov3/OpenLabeling/main/output/
+tensorflow_yolov3/raccoon_dataset/images/
+tensorflow_yolov3/straittrainingset/
+tensorflow_yolov3/tf_yolo_label/straittrainingset/
+tensorflow_yolov3/yolo_label/
+
 
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
+*.tfrecords
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
