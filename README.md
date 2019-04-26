@@ -8,8 +8,8 @@ NOTE, we choosed the folder name /tensorflow_yolov3 instead of /tensorflow-yolov
 If you want to train an example of a simple 1-class data set, a raccoon data set is provided and explained in the readme.md or look in the original repo...
 
 
-##############################################
-Here it is for training the banedk images 
+#######
+#Here it is for training the banedk images 
 
 Train "train image" dataset
 
@@ -69,7 +69,8 @@ $ python quick_test_bane_tf_trained.py
 9) Todo get the evaluation code to work with our three class example, it works for the racoon example!
 $ python evaluate_bane.py
 
-############################################################
+
+#######
 # Convert weight trained in the pjreddie framework to the tensorflow-yolov3 framework, 
 
 1) use the code to convert the pjreddie trained network (darknet) to the this framework, this code convert the network with only 1 colour channel
