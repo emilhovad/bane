@@ -42,6 +42,7 @@ $ python kmeans_bane.py    # get prior anchors and rescale the values to the ran
 
 
 5) Get the pretrained weights (downloads automatically if no files are in /checkpoint/) this is probably where you can choose (320X320, 416X1416 or 608X608) in the url download or if you put the weights in the /checkpoint/ folder 
+
 $ python convert_weight_tf_bane.py --convert       # get pretrained weights
 Remember our files are black white, we will convert the images to rgb and use three channels
 
