@@ -1,0 +1,1 @@
+./darknet detector test RailWayDataFiles/RailWayRun8_3Classes.data cfg/RailWay/yolov3Run8_1_3Classes.cfg darknet53.conv.74 -dont_show -dont_save_image -save_labels < data/BaneDk/TestSet/TestCrossing/ToTest.txt > output/RunBaseline3Classes.txt

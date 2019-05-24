@@ -1,0 +1,5 @@
+classes = 4
+train = H:\Deep_Learning\darknet-master\build\darknet\x64\data\BaneDk\train.txt
+valid = H:\Deep_Learning\darknet-master\build\darknet\x64\data\BaneDk\test.txt
+names = H:\Deep_Learning\darknet-master\build\darknet\x64\data\BaneDk\RailWay.names
+backup = H:\Deep_Learning\darknet-master\build\darknet\x64\data\BaneDk\backup

@@ -1,0 +1,1 @@
+./darknet.exe detector mapMultiple RailWayDataFiles/RailWayRun7_3Classes.data cfg/RailWay/yolov3Run7_3Classes.cfg < data/BaneDk/Run7_3Classes/backup/allWeightsInFolder.txt >> results/AllTestResultyolov3Run7_3Classes.txt

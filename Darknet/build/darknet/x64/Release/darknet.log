@@ -1,0 +1,92 @@
+﻿  detector.c
+e:\dtu\deep_learning\darknet-master\src\activations.h(25): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(26): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(24): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(35): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(36): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(39): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(40): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(41): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(42): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(43): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(46): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(47): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(48): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(53): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(54): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(60): warning C4305: 'return': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\activations.h(72): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(80): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(83): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(84): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(85): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\activations.h(87): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\wado\documents\opencv_3_4\opencv-3.4.0\build\install\include\opencv2\core\types_c.h(929): warning C4013: 'cvRound' undefined; assuming extern returning int
+e:\dtu\deep_learning\darknet-master\src\detector.c(48): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(54): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(69): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(146): warning C4305: 'function': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(203): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(223): warning C4476: 'printf' : unknown type field character ' ' in format specifier
+e:\dtu\deep_learning\darknet-master\src\detector.c(225): warning C4474: 'sprintf' : too many arguments passed for format string
+  e:\dtu\deep_learning\darknet-master\src\detector.c(225): note: placeholders and their parameters expect 3 variadic arguments, but 4 were provided
+e:\dtu\deep_learning\darknet-master\src\detector.c(230): warning C4474: 'sprintf' : too many arguments passed for format string
+  e:\dtu\deep_learning\darknet-master\src\detector.c(230): note: placeholders and their parameters expect 3 variadic arguments, but 4 were provided
+e:\dtu\deep_learning\darknet-master\src\detector.c(233): warning C4474: 'sprintf' : too many arguments passed for format string
+  e:\dtu\deep_learning\darknet-master\src\detector.c(233): note: placeholders and their parameters expect 3 variadic arguments, but 4 were provided
+e:\dtu\deep_learning\darknet-master\src\detector.c(147): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(148): warning C4244: 'initializing': conversion from 'long double' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(290): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(291): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(283): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(284): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(285): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(286): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(315): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(316): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(308): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(309): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(310): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(311): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(336): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(337): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(329): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(330): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(331): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(332): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(365): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(407): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(408): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(489): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(504): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(506): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(497): warning C4101: 'l': unreferenced local variable
+e:\dtu\deep_learning\darknet-master\src\detector.c(596): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(615): warning C4305: 'initializing': truncation from 'double' to 'const float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(616): warning C4305: 'initializing': truncation from 'double' to 'const float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(578): warning C4101: 'j': unreferenced local variable
+e:\dtu\deep_learning\darknet-master\src\detector.c(1052): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'double'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1052): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1052): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 4 has type 'double'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1052): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 5 has type 'double'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1083): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1088): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1089): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1095): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1096): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1040): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1150): warning C4305: 'initializing': truncation from 'double' to 'float'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1143): warning C4101: 'time': unreferenced local variable
+e:\dtu\deep_learning\darknet-master\src\detector.c(1332): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 2 has type 'int'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1332): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 3 has type 'int'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1332): warning C4477: 'fprintf' : format string '%f' requires an argument of type 'double', but variadic argument 4 has type 'int'
+e:\dtu\deep_learning\darknet-master\src\detector.c(1326): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\dtu\deep_learning\darknet-master\src\detector.c(1367): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  1154 of 1159 functions (99.6%) were compiled, the rest were copied from previous compilation.
+    23 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  darknet.vcxproj -> E:\DTU\Deep_Learning\darknet-master\build\darknet\x64\darknet.exe
