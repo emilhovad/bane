@@ -1,8 +1,8 @@
 import os, re
 import glob
 
-LabelLocation = 'Labels/'#'train3Classes2.txt'
-SaveName = 'Result.csv'
+LabelLocation = 'LabelsExsample/'  #Label Location
+SaveName = 'Result.csv' #File name to save to
 
 def is_not_blank(s):
     return bool(s and s.strip())  
